@@ -1,0 +1,73 @@
+body {
+  background: linear-gradient(40deg, rgb(236, 243, 237), rgb(236, 233, 243), rgb(246, 247, 231), #eee4e9, #c8c4f9, #c6c2cc);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container-fluid {
+  color: white;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  border-radius: 15px;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #a36cf2, #7c4dff);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #7c4dff, #5c3cff);
+  color: white;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff !important;
+  padding: 5px
+}
+.navbar-brand ul li a, .nav-link {
+  color: #fff !important
+}
+
+.nav-link {
+  margin-right: 1rem;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
+.navbar {
+  padding: 0 !important;
+  color: #fff !important
+}

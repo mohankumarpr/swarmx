@@ -1,0 +1,112 @@
+.landing-page {
+  position: reative;
+  height: 90vh;
+  width: 97vw;
+  margin: 5vh 0;
+  background: url('../../../public/images/landingPageBg.jpg') no-repeat center center/cover;
+  background-size: cover;
+  overflow: hidden;
+  transform: scale(0.95); /* Zoom-out effect */
+  animation: zoomInEffect 0.5s ease-in-out forwards;
+}
+
+@keyframes zoomInEffect {
+  0% {
+    transform: scale(0.95); /* Start slightly zoomed out */
+  }
+  100% {
+    transform: scale(1); /* Zoom in to original size */
+  }
+}
+
+.darken-landing-page {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the color and opacity */
+  z-index: 0; /* Ensure the overlay is on top of the image */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.content {
+  max-width: 98%; /* Adjust width if needed */
+  text-align: center; /* Center text inside */
+  color: #fff; /* Ensure text is visible on dark background */
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.subtitleContainer {
+  width: 60%;
+  margin: 0 auto; /* Center the subtitle container */
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.title, .subtitle {
+  animation: zoomOutEffect 2s ease-in-out forwards;
+}
+
+@keyframes zoomOutEffect {
+  0% {
+    transform: scale(1.1); /* Start slightly zoomed-in */
+  }
+  100% {
+    transform: scale(1); /* End at original size */
+  }
+}
+
+
+.get-started-btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.stats-section {
+  padding: 50px 0;
+  background-color: rgba(248, 249, 250, 0.5);
+  width: 97vw;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.stats-section.visible {
+  opacity: 1;
+}
+
+.stat-item {
+  margin-bottom: 20px;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.stat-item p {
+  font-size: 18px;
+  color: #333;
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,16 @@
+.footer-section {
+  width: 99vw;
+  padding: 50px 0;
+  background-color: black;
+  color: white;
+}
+
+.footer-section .footer-details {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.footer-section .footer-details div {
+  text-align: center;
+}
